@@ -174,7 +174,7 @@ The fourth option(Database per Tenant/Silo model) is to store data for each tena
 
 ## Argument
 
-![Multi-Tenancy Argument](assets/multi-tenancy/Multitenancy_Arguments.png)
+![Multi-Tenancy Argument](assets/multi-tenancy/Multitenancy_Arguments.jpg)
 
 ## Refrences
 
