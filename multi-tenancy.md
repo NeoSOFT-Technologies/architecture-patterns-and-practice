@@ -182,6 +182,6 @@ The fourth option(Database per Tenant/Silo model) is to store data for each tena
 - [Multi‐Tenant Data Architecture](https://ramblingsofraju.com/wp-content/uploads/2016/08/Multi-Tenant-Data-Architecture.pdf)
 - [Implementing multi-tenant patterns in Amazon Redshift using data sharing](https://aws.amazon.com/blogs/big-data/implementing-multi-tenant-patterns-in-amazon-redshift-using-data-sharing/)
 - [What is multitenancy?](https://www.redhat.com/en/topics/cloud-computing/what-is-multitenancy)
-Multi tenant Architecture for a SaaS Application on AWS
+- [Multi tenant Architecture for a SaaS Application on AWS](https://www.clickittech.com/saas/multi-tenant-architecture/)
 - [The Force.com Multitenant Architecture](http://www.developerforce.com/media/ForcedotcomBookLibrary/Force.com_Multitenancy_WP_101508.pdf)
 - [Multi-Tenant Architecture: Designing a SaaS Application](https://relevant.software/blog/multi-tenant-architecture/)
