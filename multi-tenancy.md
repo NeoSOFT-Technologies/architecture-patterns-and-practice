@@ -157,9 +157,9 @@ The fourth option(Database per Tenant/Silo model) is to store data for each tena
     - Feature Flag
     - Localization (may be, mostly it goes with user context)
 
-* Argument
+## Argument
 
-* Refrences
+## Refrences
 
 - [Microsoft - Multi-tenant SaaS database tenancy patterns](https://docs.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns)
 - [Multi‐Tenant Data Architecture](https://ramblingsofraju.com/wp-content/uploads/2016/08/Multi-Tenant-Data-Architecture.pdf)
