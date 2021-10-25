@@ -31,6 +31,8 @@ Multitenant applications typically include a level of customization for tenants,
         - In the data-segregation model, the application is shared between tenants but the data of each tenant is stored in separate data stores.
 
 
+![Multi-Tenancy Workflow](assets/multi-tenancy/Multi_Tenancy_Support.png)
+
 * How to choose the appropriate tenancy model ?
 
     1. Scalability
@@ -78,14 +80,21 @@ Multitenant applications typically include a level of customization for tenants,
     - Tables that contain tenant-specific data include a column to identify which tenant each row belongs to
 
 
+![Multi-Tenancy Single Database, Shared Schema](assets/multi-tenancy/Single_Database_Shared_Schema.png)
+
 2. Single database, separate schema/Bridge model
 
     - One database to hold the data for all tenants
     - Separate tables for each tenant, each set under a tenant-specific schema
 
+![Multi-Tenancy Single database, separate schema](assets/multi-tenancy/Single_Database_Separate_Schema.png)
+
+
 3. Multiple databases, multiple tenants per database, shared schema/Hybrid Model
 
     - Tenants share a database and schema with other tenants, but are spread over multiple databases
+
+![Multiple databases, multiple tenants per database, shared schema](assets/multi-tenancy/hybrid.png)
 
 4. Database per Tenant/Silo model
 
@@ -97,10 +106,13 @@ Multitenant applications typically include a level of customization for tenants,
 - If schema-based isolation is not good enough (or not supported by the target database), or if we don't want tenants to share the same database connection pool, then we can wire our application to use a different DataSource for each tenant.
 - This approach unlocks new option for tenant isolation, for example it's possible to use different database & credentials for each tenant
 
+![Multi-Tenancy Database per Tenant](assets/multi-tenancy/Database_per_Tenant.png)
+
 ## Decision
 
 The fourth option(Database per Tenant/Silo model) is to store data for each tenant in separate databases within a cluster. We need our data isolated from other tenants, we can use the silo model and each database may have distinct data models, monitoring, management, and security footprints.
 
+![Multi-Tenancy Workflow](assets/multi-tenancy/Multi_Tenancy_Workflow.png)
 
 ## Details
 
@@ -123,6 +135,8 @@ The fourth option(Database per Tenant/Silo model) is to store data for each tena
 * Tenant management module (which comes pre-installed with the startup projects) allows you to set a connection string for any tenant (as optional), so you can achieve any of the approaches.
 
 ## Constraints
+
+![Multi-Tenancy Constraints](assets/multi-tenancy/Multitenancy_Gateway.png)
 
 * Gateway Manager
 
@@ -157,7 +171,10 @@ The fourth option(Database per Tenant/Silo model) is to store data for each tena
     - Feature Flag
     - Localization (may be, mostly it goes with user context)
 
+
 ## Argument
+
+![Multi-Tenancy Argument](assets/multi-tenancy/Multitenancy_Arguments.png)
 
 ## Refrences
 
